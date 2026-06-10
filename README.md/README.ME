@@ -1,0 +1,68 @@
+#Student Course Registration System
+
+#What the Project Does
+
+The Student Course Registration System is a Python command-line application designed to help a school manage students, courses, and course registrations.
+
+The system allows an administrator to:
+- Add and manage students
+- Add and manage courses
+- Register students into courses
+- View all students and courses
+- View students registered in a specific course
+- View courses a student is registered in
+- Save and load data using JSON files
+
+#Features Implemented
+Add new students
+View all students
+Search for a student by ID
+Add new courses
+View all courses
+Register students to courses
+Prevent duplicate student registrations
+Prevent duplicate student and course entries
+Prevent course over-enrollment (capacity control)
+View all students in a course
+View all courses for a student
+Save data to JSON files
+Load data from JSON files
+Input validation and error handling
+
+#Classes Used
+1-Person (Base Class)
+Stores common attributes:
+    name
+    email
+    phone number
+
+2-Student (Inherits Person)
+Adds:
+    student_id
+    Represents a student in the system
+
+3-Course
+Stores course information:
+    course_id
+    course_name
+    trainer_name
+    capacity
+
+3-SchoolSystem
+Core logic of the application
+Manages:
+    students
+    courses
+    registrations
+Handles:
+    adding data
+    searching data
+    registration 
+    file saving and loading
+
+#Challenges Faced
+Making sure Object-Oriented Programming (especially inheritance) was used correctly
+Avoiding students registering for the same course more than once
+Making sure courses do not exceed their maximum number of students
+Saving and loading data correctly using JSON files
+Preventing the program from crashing when users enter wrong input
